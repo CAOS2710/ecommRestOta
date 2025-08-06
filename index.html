@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylerestot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Restauraciones Otarola</title>
+</head>
+
+<body>
+    <div class="head">
+        <div class="slider" id="slider">
+            <div class="slide">
+            <img src="img/slide1.jpg">
+            <div class="ad-text">FordLovers🔧</div>
+            </div>
+            <div class="slide">
+            <img src="img/slide2.png">
+            <div class="ad-text">#TeamMopar⚙️</div>
+            </div>
+            <div class="slide">
+            <img src="img/slide2.jpg">
+            <div class="ad-text">ChevyHeads Club🚘</div>
+            </div>
+    </div>
+    <div class="divisor">
+        <div class="divisor2">
+            <img src="img/restota2.jpg" id="logomiddle" alt="logomiddle">
+            <div class="title-group">
+                <p class="divititle">Restauraciones Otárola</p>
+                <p class="divititle2">"Restaurando tus sueños"</p>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="inviteMenu">
+            <p>Explora nuestras categorías:</p>
+        </div>
+        <div class="opcion" onclick="toggleSubmenu('submenuExterior')">
+            <img src="img/fm1.jpg" alt="ext">
+            <div class="texto">Exterior</div>
+            <div class="submenu" id="submenuExterior">
+                <p>Pintura</p>
+                <p>Carrocería</p>
+                <p>Faros</p>
+                <p>Parabrisas</p>
+                <p>Detalles Cromados</p>
+                <p><a href="categoria.html" style="color: black; text-decoration:none;">Todo</a></p>
+            </div>
+        </div>
+        <div class="opcion" onclick="toggleSubmenu('submenuInterior')">
+            <img src="img/fm2.jpg" alt="int">
+            <div class="texto">Interior</div>
+            <div class="submenu" id="submenuInterior">
+                <p>Tapicería</p>
+                <p>Paneles de puerta</p>
+                <p>Consola central</p>
+                <p>Alfombras</p>
+                <p>Volante</p>
+                <p>Todo</p>
+            </div>
+        </div>
+        <div class="opcion" onclick="toggleSubmenu('submenuMotor')">
+            <img src="img/fm3.jpg" alt="engine">
+            <div class="texto">Motor</div>
+            <div class="submenu" id="submenuMotor">
+                <p>Carburador</p>
+                <p>Pistones</p>
+                <p>Cigüeñal</p>
+                <p>Válvulas</p>
+                <p>Radiador</p>
+                <p>Todo</p>
+            </div>
+        </div>
+        <div class="opcion" onclick="toggleSubmenu('submenuTransmision')">
+            <img src="img/fm4.jpg" alt="drivetrain">
+            <div class="texto">Transmisión y Frenos</div>
+            <div class="submenu" id="submenuTransmision">
+                <p>Transmisión Manual</p>
+                <p>Transmisión Automática</p>
+                <p>Frenos de Disco</p>
+                <p>Frenos de Tambor</p>
+                <p>Hidráulicos</p>
+                <p>Todo</p>
+            </div>
+        </div>
+        <div class="opcion" onclick="toggleSubmenu('submenuElectrico')">
+            <img src="img/fm5.jpg" alt="electric">
+            <div class="texto">Eléctrico</div>
+            <div class="submenu" id="submenuElectrico">
+                <p>Instalación eléctrica</p>
+                <p>Luces</p>
+                <p>Alternador</p>
+                <p>Relés</p>
+                <p>Fusibles</p>
+                <p>Todo</p>
+            </div>
+        </div>
+    </div>
+    <div class="maincontainer">
+        <div class="topbar">
+            <img src="img/restota2.jpg" id="logotopbar" alt="logotopbar">
+            <div class="topbartittlegroup">
+                <p class="topbartitle">Restauraciones Otárola</p>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Buscar Productos" />
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="buttonstopbar">
+                <button><a href="login.html" style="color: white; text-decoration:none;">Log In</a></button>
+                <button><a href="register.html" style="color: white; text-decoration:none;">Registrarse</a></button>
+            </div>
+        </div>
+        <div class="estadisticas">
+            <div class="estadisticas2">
+                <p class="promolabel">Repuestos para todas tus marcas antiguas</p>
+                <div class="estadistica">
+                    <p class="numero">250+</p>
+                    <p class="descripcion">Órdenes Completadas</p>
+                </div>
+                <div class="estadistica">
+                    <p class="numero">250+</p>
+                    <p class="descripcion">Productos</p>
+                </div>
+                <div class="estadistica">
+                    <p class="numero">250+</p>
+                    <p class="descripcion">Clientes Satisfechos</p>
+                </div>
+            </div>   
+        </div>
+        <div class="carousel-wrapper">
+            <h2>Lo más vendido</h2>
+            <div class="carousel" id="carousel-nuevo">
+                <button class="carousel-btn left" onclick="scrollCarousel('carousel-nuevo', 'left')">
+                &#10094;
+                </button>
+                <div class="carousel-track">
+                    <a href="itemLogIn.html"><div class="carousel-item"><img src="img/producto1.jpg" alt="Producto 1"><p class="itemtitle">Kit Cables Bujía V8</p><p>Ford Mustang 1965</p><p>CRC25.999</p></div></a>
+                    <div class="carousel-item"><img src="img/producto2.jpg" alt="Producto 2"><p class="itemtitle">Kit Sistema Eléctrico</p><p>Ford Mustang 1965</p><p>CRC25.999</p></div>
+                    <div class="carousel-item"><img src="img/producto3.jpg" alt="Producto 3"><p class="itemtitle">Kit Overhaul V8 289inch</p><p>Ford Mustang 1965-1966</p><p>CRC225.999</p></div>
+                    <div class="carousel-item"><img src="img/producto4.jpg" alt="Producto 4"><p class="itemtitle">Kit Pistones 318inch</p><p>Dodge Challenger 1966-1970</p><p>CRC115.999</p></div>
+                    <div class="carousel-item"><img src="img/producto5.jpg" alt="Producto 5"><p class="itemtitle">Distriución V8 Ford 302inch</p><p>Ford 1965-1978</p><p>CRC45.999</p></div>
+                    <div class="carousel-item"><img src="img/producto6.jpg" alt="Producto 6"><p class="itemtitle">Bomba Aceite 289inch</p><p>Ford 1964-1968</p><p>CRC35.999</p></div>
+                    <div class="carousel-item"><img src="img/producto7.jpg" alt="Producto 7"><p class="itemtitle">Kit Overhaul Transmisión C4</p><p>Ford Mustang 1965-1968</p><p>CRC279.999</p></div>
+                    <div class="carousel-item"><img src="img/producto8.jpg" alt="Producto 8"><p class="itemtitle">Kit Overhaul Basico AT Dodge</p><p>Dodge 1968-1972</p><p>CRC125.999</p></div>
+                    <div class="carousel-item"><img src="img/producto9.jpg" alt="Producto 9"><p class="itemtitle">Transmisión AT Dodge</p><p>Ford Mustang 1965</p><p>CRC25.999</p></div>
+                    <div class="carousel-item"><img src="img/producto10.jpg" alt="Producto 10"><p class="itemtitle">Kit Frenos de Disco</p><p>Ford Mustang 1965-1970</p><p>CRC360.999</p></div>
+                    <div class="carousel-item"><img src="img/producto11.jpg" alt="Producto 11"><p class="itemtitle">Booster Frenos</p><p>Chevy Camaro 1967</p><p>CRC84.999</p></div>
+                </div>
+              <button class="carousel-btn right" onclick="scrollCarousel('carousel-nuevo', 'right')">
+                &#10095;
+              </button>
+            </div>
+        </div>
+        <div class="carousel-wrapper">
+            <h2>Artículos Nuevos</h2>
+            <div class="carousel" id="carousel-masvendido">
+                <button class="carousel-btn left" onclick="scrollCarousel('carousel-masvendido', 'left')">
+                &#10094;
+                </button>
+                <div class="carousel-track">
+                    <div class="carousel-item"><img src="img/producto12.jpg" alt="Producto 12"><p class="itemtitle">Kit Frenos Completo</p><p>Ford Mustang 1965-1966</p><p>CRC225.999</p></div>
+                    <div class="carousel-item"><img src="img/producto21.jpg" alt="Producto 21"><p class="itemtitle">Kit Luces de Freno</p><p>Ford Mustang 1965-1966</p><p>CRC55.999</p></div>
+                    <div class="carousel-item"><img src="img/producto13.jpg" alt="Producto 13"><p class="itemtitle">Kit Emblemas Exteriores</p><p>Ford Mustang 1965</p><p>CRC60.999</p></div>
+                    <div class="carousel-item"><img src="img/producto17.jpg" alt="Producto 17"><p class="itemtitle">Kit Sistema Eléctrico</p><p>Dodge Challenger 1970</p><p>CRC60.999</p></div>
+                    <div class="carousel-item"><img src="img/producto15.jpg" alt="Producto 15"><p class="itemtitle">Manivela Pony con Emblema</p><p>Ford Mustang 1966</p><p>CRC120.999</p></div>
+                    <div class="carousel-item"><img src="img/producto16.jpg" alt="Producto 19"><p class="itemtitle">Llavín Ignición</p><p>Ford Mustang 1965-1966</p><p>CRC60.999</p></div>
+                    <div class="carousel-item"><img src="img/producto7.jpg" alt="Producto 7"><p class="itemtitle">Kit Overhaul Transmisión C4</p><p>Ford Mustang 1965-1968</p><p>CRC279.999</p></div>
+                    <div class="carousel-item"><img src="img/producto18.jpg" alt="Producto 18"><p class="itemtitle">Kit Venas Parbrisas Frontal</p><p>Ford Mustang 1965-1966</p><p>CRC89.999</p></div>
+                    <div class="carousel-item"><img src="img/producto1.jpg" alt="Producto 1"><p class="itemtitle"> class="itemtitle"Kit Cables Bujía V8</p><p>Ford Dodge Chevy</p><p>CRC39.999</p></div>
+                    <div class="carousel-item"><img src="img/producto10.jpg" alt="Producto 10"><p class="itemtitle">Kit Frenos de Disco</p><p>Ford Mustang 1965-1970</p><p>CRC360.999</p></div>
+                    <div class="carousel-item"><img src="img/producto16.jpg" alt="Producto 16"><p class="itemtitle">Kit Aftermarket Manivela</p><p>Ford Mustang 1965-1972</p><p>CRC95.999</p></div>
+                </div>
+              <button class="carousel-btn right" onclick="scrollCarousel('carousel-masvendido', 'right')">
+                &#10095;
+              </button>
+            </div>
+        </div>
+        <div class="carousel-wrapper">
+            <h2>Ofertas</h2>
+            <div class="carousel" id="carousel-ofertas">
+                <button class="carousel-btn left" onclick="scrollCarousel('carousel-ofertas', 'left')">
+                &#10094;
+                </button>
+                <div class="carousel-track">
+                    <div class="carousel-item"><img src="img/producto15.jpg" alt="Producto 15"><p class="itemtitle">Manivela Pony con Emblema</p><p>Ford Mustang 1966</p><p>CRC120.999</p></div>
+                    <div class="carousel-item"><img src="img/producto21.jpg" alt="Producto 21"><p class="itemtitle">Kit Luces de Freno</p><p>Ford Mustang 1965-1966</p><p>CRC55.999</p></div>
+                    <div class="carousel-item"><img src="img/producto12.jpg" alt="Producto 12"><p class="itemtitle">Kit Frenos Completo</p><p>Ford Mustang 1965-1966</p><p>CRC225.999</p></div>
+                    <div class="carousel-item"><img src="img/producto8.jpg" alt="Producto 8"><p class="itemtitle">Kit Overhaul Basico AT Dodge</p><p>Dodge 1968-1972</p><p>CRC125.999</p></div>
+                    <div class="carousel-item"><img src="img/producto6.jpg" alt="Producto 6"><p class="itemtitle">Bomba Aceite 289inch</p><p>Ford 1964-1968</p><p>CRC35.999</p></div>
+                    <div class="carousel-item"><img src="img/producto16.jpg" alt="Producto 16"><p class="itemtitle">Kit Aftermarket Manivela</p><p>Ford Mustang 1965-1972</p><p>CRC95.999</p></div>
+                    <div class="carousel-item"><img src="img/producto7.jpg" alt="Producto 7"><p class="itemtitle">Kit Overhaul Transmisión C4</p><p>Ford Mustang 1965-1968</p><p>CRC279.999</p></div>
+                    <div class="carousel-item"><img src="img/producto18.jpg" alt="Producto 18"><p class="itemtitle">Kit Venas Parbrisas Frontal</p><p>Ford Mustang 1965-1966</p><p>CRC89.999</p></div>
+                    <div class="carousel-item"><img src="img/producto5.jpg" alt="Producto 5"><p class="itemtitle">Distriución V8 Ford 302inch</p><p>Ford 1965-1978</p><p>CRC45.999</p></div>
+                    <div class="carousel-item"><img src="img/producto13.jpg" alt="Producto 13"><p class="itemtitle">Kit Emblemas Exteriores</p><p>Ford Mustang 1965</p><p>CRC60.999</p></div>
+                    <div class="carousel-item"><img src="img/producto9.jpg" alt="Producto 9"><p class="itemtitle">Kit Overhaul V8 289inch</p><p>Ford Mustang 1965</p><p>CRC25.999</p></div>
+                </div>
+              <button class="carousel-btn right" onclick="scrollCarousel('carousel-ofertas', 'right')">
+                &#10095;
+              </button>
+            </div>
+        </div>
+        <div class="ayuda-container">
+                <h2>¿Necesitás ayuda?</h2>
+                <div class="ayuda-botones">
+                    <a href="https://wa.me/50661280458" target="_blank" class="ayuda-icono">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://wa.me/50661280458" target="_blank" class="ayuda-icono">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="mailto:restauraciones.otarola@gmail.com" class="ayuda-icono">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            <h4>Contáctanos de Lunes a Sábado de 7am a 7pm</h4>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/restota.jpg">
+        <div class="infofooter">
+            <p class="titleFoot">Restaurando tus Sueños</p>
+            <p class="legendFoot">Síguenos:</p>
+            <div class="social-container">
+                <div class="social-botones">
+                    <a href="https://www.facebook.com/" class="social-icono">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-icono">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/explore" class="social-icono">
+                    <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="develop">Developed by CAOSCoding | Copywright 2025</p>
+        </div>
+    </div>
+    <script src="js/restota.js"></script>
+    <script src="https://kit.fontawesome.com/31e6f1c86d.js" crossorigin="anonymous"></script>
+</body>
+</html>
