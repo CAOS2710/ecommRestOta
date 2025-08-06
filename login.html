@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/stylerestot.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/31e6f1c86d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="topbar">
+    <a href="restotarola.html">
+        <img src="img/restota2.jpg" id="logotopbarUser" alt="Logo">
+    </a>
+  <div class="topbartittlegroup">
+    <p class="topbartitle">Restauraciones Otárola</p>
+  </div>
+  <div class="searchbar">
+    <input type="text" placeholder="Buscar Productos" />
+    <i class="fas fa-search"></i>
+  </div>
+  <div class="buttonstopbar">
+    <button><a href="login.html" style="color: white; text-decoration:none;">Log In</a></button>
+    <button><a href="register.html" style="color: white; text-decoration:none;">Registrarse</a></button>
+  </div>
+</div>
+
+<div class="maincontainerlog" style="display: flex; justify-content: center; align-items: center; padding: 40px; min-height: 500px;">
+
+  <div style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.2); width: 400px; text-align: center;">
+    <h2 style="font-family: 'Orbitron', sans-serif; color: #811F1F;">Iniciar Sesión</h2>
+
+    <form style="margin-top: 30px; font-family: 'Titillium Web', sans-serif;">
+      <div style="margin-bottom: 20px; text-align: left;">
+        <label for="email" style="font-weight: bold;">Correo Electrónico</label><br>
+        <input type="email" id="email" name="email" placeholder="correo@example.com" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;">
+      </div>
+
+      <div style="margin-bottom: 20px; text-align: left;">
+        <label for="password" style="font-weight: bold;">Contraseña</label><br>
+        <input type="password" id="password" name="password" placeholder="********" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;">
+      </div>
+
+      <button type="submit" class="order-btn pay-btn" style="width: 100%; margin-top: 10px; background-color:#811F1F; color:white;"><a href="restotarolaUser.html" style="color: white; text-decoration:none;">Iniciar Sesión</a></button>
+
+      <p style="margin-top: 15px; font-size: 14px;">
+        <a href="forgot-password.html" style="color: #811F1F; text-decoration: none;">¿Olvidaste tu contraseña?</a>
+      </p>
+    </form>
+  </div>
+</div>
+<div class="footer">
+    <a href="restotarola.html">
+        <img id="footerUser" src="img/restota.jpg">
+    </a>
+    <div class="infofooter">
+        <p class="titleFoot">Restaurando tus Sueños</p>
+        <p class="legendFoot">Síguenos:</p>
+        <div class="social-container">
+            <div class="social-botones">
+                <a href="https://www.facebook.com/" class="social-icono">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="social-icono">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/explore" class="social-icono">
+                <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <p class="develop">Developed by CAOSCoding | Copywright 2025</p>
+    </div>
+</div>
+<script src="js/restota.js"></script>
+</body>
+</html>

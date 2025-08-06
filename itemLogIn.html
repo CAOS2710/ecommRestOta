@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - Detalle</title>
+  <link rel="stylesheet" href="css/stylerestot.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/31e6f1c86d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="topbar">
+    <a href="restotarola.html">
+        <img src="img/restota2.jpg" id="logotopbarUser" alt="Logo">
+    </a>
+    <div class="topbartittlegroup">
+        <p class="topbartitle">Restauraciones Otárola</p>
+    </div>
+    <div class="searchbar">
+        <input type="text" placeholder="Buscar Productos" />
+        <i class="fas fa-search"></i>
+    </div>
+    <div class="buttonstopbar">
+      <button><a href="login.html" style="color: white; text-decoration:none;">Log In</a></button>
+      <button><a href="register.html" style="color: white; text-decoration:none;">Registrarse</a></button>
+    </div>
+</div>
+
+<div class="maincontaineritem" style="display: flex; justify-content: center; align-items: center; padding: 40px; gap: 40px; min-height: 500px;">
+
+  <div style="flex: 0 0 auto; display: flex; justify-content: center;">
+    <img src="img/producto1.jpg" alt="Producto" style="width: 300px; border-radius: 10px;">
+  </div>
+  <div style="flex: 0 0 auto; text-align: left;">
+    <h2 style="font-family: 'Orbitron', sans-serif; color: #811F1F;">Kit Cables Bujía V8</h2>
+    <div style="font-family: 'Titillium Web', sans-serif; font-size: 16px;">
+      <p><strong>Modelo:</strong> Ford Mustang</p>
+      <p><strong>Año:</strong> 1965-1973</p>
+      <p><strong>Descripción:</strong> Juego de cables de bujía de alta calidad para motores V8.</p>
+      <p><strong>Precio:</strong> CRC 25.999</p>
+      <p><strong>Impuesto de Venta (13%):</strong> CRC 3.379</p>
+      <p><strong>Total a Pagar:</strong> CRC 29.378</p>
+    </div>
+
+    <p><strong>Inicia sesión para poder poder comprar</strong></p>
+  </div>
+
+
+  <div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <button class="order-btn back-btn" style="width: 180px;"><a href="categoria.html" style="color: white; text-decoration:none;">Volver</a></button>
+    <button id="cartButton" class="order-btn pay-btn" style="width: 180px;"><a href="login.html" style="background-color: #D57A7A; color:black; text-decoration:none;">Log In</a></button>
+  </div>
+
+</div>
+
+
+<div id="alertMessage" style="display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background-color: white; color: #811F1F; border: 2px solid #811F1F; padding: 15px 20px; border-radius: 10px; font-family: 'Orbitron', sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0,0,0,0.3); z-index: 9999; align-items: center; gap: 10px;">
+    <i id="alertIcon" class="fa-solid fa-check-circle" style="font-size: 24px; color: green;"></i>
+    <span id="alertText">Agregado exitosamente</span>
+  </div>
+  <div class="footer">
+    <a href="restotarola.html">
+        <img id="footerUser" src="img/restota.jpg">
+    </a>
+    <div class="infofooter">
+        <p class="titleFoot">Restaurando tus Sueños</p>
+        <p class="legendFoot">Síguenos:</p>
+        <div class="social-container">
+            <div class="social-botones">
+                <a href="https://www.facebook.com/" class="social-icono">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="social-icono">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/explore" class="social-icono">
+                <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <p class="develop">Developed by CAOSCoding | Copywright 2025</p>
+    </div>
+</div>
+<script src="js/restota.js"></script>
+
+</body>
+</html>
